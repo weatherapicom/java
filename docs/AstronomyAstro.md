@@ -1,3 +1,4 @@
+
 # AstronomyAstro
 
 ## Properties
@@ -9,3 +10,6 @@ Name | Type | Description | Notes
 **moonset** | **String** |  |  [optional]
 **moonPhase** | **String** |  |  [optional]
 **moonIllumination** | **String** |  |  [optional]
+
+
+

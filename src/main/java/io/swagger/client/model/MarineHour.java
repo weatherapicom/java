@@ -27,10 +27,10 @@ import java.io.IOException;
 import java.math.BigDecimal;
 
 /**
- * ForecastHour
+ * MarineHour
  */
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2023-11-08T07:58:56.667Z")
-public class ForecastHour {
+public class MarineHour {
   @SerializedName("time_epoch")
   private Integer timeEpoch = null;
 
@@ -127,10 +127,28 @@ public class ForecastHour {
   @SerializedName("gust_kph")
   private BigDecimal gustKph = null;
 
+  @SerializedName("sig_ht_mt")
+  private BigDecimal sigHtMt = null;
+
+  @SerializedName("swell_ht_mt")
+  private BigDecimal swellHtMt = null;
+
+  @SerializedName("swell_ht_ft")
+  private BigDecimal swellHtFt = null;
+
+  @SerializedName("swell_dir")
+  private BigDecimal swellDir = null;
+
+  @SerializedName("swell_dir_16_point")
+  private BigDecimal swellDir16Point = null;
+
+  @SerializedName("swell_period_secs")
+  private BigDecimal swellPeriodSecs = null;
+
   @SerializedName("uv")
   private Integer uv = null;
 
-  public ForecastHour timeEpoch(Integer timeEpoch) {
+  public MarineHour timeEpoch(Integer timeEpoch) {
     this.timeEpoch = timeEpoch;
     return this;
   }
@@ -148,7 +166,7 @@ public class ForecastHour {
     this.timeEpoch = timeEpoch;
   }
 
-  public ForecastHour time(String time) {
+  public MarineHour time(String time) {
     this.time = time;
     return this;
   }
@@ -166,7 +184,7 @@ public class ForecastHour {
     this.time = time;
   }
 
-  public ForecastHour tempC(BigDecimal tempC) {
+  public MarineHour tempC(BigDecimal tempC) {
     this.tempC = tempC;
     return this;
   }
@@ -184,7 +202,7 @@ public class ForecastHour {
     this.tempC = tempC;
   }
 
-  public ForecastHour tempF(BigDecimal tempF) {
+  public MarineHour tempF(BigDecimal tempF) {
     this.tempF = tempF;
     return this;
   }
@@ -202,7 +220,7 @@ public class ForecastHour {
     this.tempF = tempF;
   }
 
-  public ForecastHour isDay(Integer isDay) {
+  public MarineHour isDay(Integer isDay) {
     this.isDay = isDay;
     return this;
   }
@@ -220,7 +238,7 @@ public class ForecastHour {
     this.isDay = isDay;
   }
 
-  public ForecastHour condition(ForecastCondition condition) {
+  public MarineHour condition(ForecastCondition condition) {
     this.condition = condition;
     return this;
   }
@@ -238,7 +256,7 @@ public class ForecastHour {
     this.condition = condition;
   }
 
-  public ForecastHour windMph(BigDecimal windMph) {
+  public MarineHour windMph(BigDecimal windMph) {
     this.windMph = windMph;
     return this;
   }
@@ -256,7 +274,7 @@ public class ForecastHour {
     this.windMph = windMph;
   }
 
-  public ForecastHour windKph(BigDecimal windKph) {
+  public MarineHour windKph(BigDecimal windKph) {
     this.windKph = windKph;
     return this;
   }
@@ -274,7 +292,7 @@ public class ForecastHour {
     this.windKph = windKph;
   }
 
-  public ForecastHour windDegree(BigDecimal windDegree) {
+  public MarineHour windDegree(BigDecimal windDegree) {
     this.windDegree = windDegree;
     return this;
   }
@@ -292,7 +310,7 @@ public class ForecastHour {
     this.windDegree = windDegree;
   }
 
-  public ForecastHour windDir(String windDir) {
+  public MarineHour windDir(String windDir) {
     this.windDir = windDir;
     return this;
   }
@@ -310,7 +328,7 @@ public class ForecastHour {
     this.windDir = windDir;
   }
 
-  public ForecastHour pressureMb(BigDecimal pressureMb) {
+  public MarineHour pressureMb(BigDecimal pressureMb) {
     this.pressureMb = pressureMb;
     return this;
   }
@@ -328,7 +346,7 @@ public class ForecastHour {
     this.pressureMb = pressureMb;
   }
 
-  public ForecastHour pressureIn(BigDecimal pressureIn) {
+  public MarineHour pressureIn(BigDecimal pressureIn) {
     this.pressureIn = pressureIn;
     return this;
   }
@@ -346,7 +364,7 @@ public class ForecastHour {
     this.pressureIn = pressureIn;
   }
 
-  public ForecastHour precipMm(BigDecimal precipMm) {
+  public MarineHour precipMm(BigDecimal precipMm) {
     this.precipMm = precipMm;
     return this;
   }
@@ -364,7 +382,7 @@ public class ForecastHour {
     this.precipMm = precipMm;
   }
 
-  public ForecastHour precipIn(BigDecimal precipIn) {
+  public MarineHour precipIn(BigDecimal precipIn) {
     this.precipIn = precipIn;
     return this;
   }
@@ -382,7 +400,7 @@ public class ForecastHour {
     this.precipIn = precipIn;
   }
 
-  public ForecastHour humidity(BigDecimal humidity) {
+  public MarineHour humidity(BigDecimal humidity) {
     this.humidity = humidity;
     return this;
   }
@@ -400,7 +418,7 @@ public class ForecastHour {
     this.humidity = humidity;
   }
 
-  public ForecastHour cloud(BigDecimal cloud) {
+  public MarineHour cloud(BigDecimal cloud) {
     this.cloud = cloud;
     return this;
   }
@@ -418,7 +436,7 @@ public class ForecastHour {
     this.cloud = cloud;
   }
 
-  public ForecastHour feelslikeC(BigDecimal feelslikeC) {
+  public MarineHour feelslikeC(BigDecimal feelslikeC) {
     this.feelslikeC = feelslikeC;
     return this;
   }
@@ -436,7 +454,7 @@ public class ForecastHour {
     this.feelslikeC = feelslikeC;
   }
 
-  public ForecastHour feelslikeF(BigDecimal feelslikeF) {
+  public MarineHour feelslikeF(BigDecimal feelslikeF) {
     this.feelslikeF = feelslikeF;
     return this;
   }
@@ -454,7 +472,7 @@ public class ForecastHour {
     this.feelslikeF = feelslikeF;
   }
 
-  public ForecastHour windchillC(BigDecimal windchillC) {
+  public MarineHour windchillC(BigDecimal windchillC) {
     this.windchillC = windchillC;
     return this;
   }
@@ -472,7 +490,7 @@ public class ForecastHour {
     this.windchillC = windchillC;
   }
 
-  public ForecastHour windchillF(BigDecimal windchillF) {
+  public MarineHour windchillF(BigDecimal windchillF) {
     this.windchillF = windchillF;
     return this;
   }
@@ -490,7 +508,7 @@ public class ForecastHour {
     this.windchillF = windchillF;
   }
 
-  public ForecastHour heatindexC(BigDecimal heatindexC) {
+  public MarineHour heatindexC(BigDecimal heatindexC) {
     this.heatindexC = heatindexC;
     return this;
   }
@@ -508,7 +526,7 @@ public class ForecastHour {
     this.heatindexC = heatindexC;
   }
 
-  public ForecastHour heatindexF(BigDecimal heatindexF) {
+  public MarineHour heatindexF(BigDecimal heatindexF) {
     this.heatindexF = heatindexF;
     return this;
   }
@@ -526,7 +544,7 @@ public class ForecastHour {
     this.heatindexF = heatindexF;
   }
 
-  public ForecastHour dewpointC(BigDecimal dewpointC) {
+  public MarineHour dewpointC(BigDecimal dewpointC) {
     this.dewpointC = dewpointC;
     return this;
   }
@@ -544,7 +562,7 @@ public class ForecastHour {
     this.dewpointC = dewpointC;
   }
 
-  public ForecastHour dewpointF(BigDecimal dewpointF) {
+  public MarineHour dewpointF(BigDecimal dewpointF) {
     this.dewpointF = dewpointF;
     return this;
   }
@@ -562,7 +580,7 @@ public class ForecastHour {
     this.dewpointF = dewpointF;
   }
 
-  public ForecastHour willItRain(Integer willItRain) {
+  public MarineHour willItRain(Integer willItRain) {
     this.willItRain = willItRain;
     return this;
   }
@@ -580,7 +598,7 @@ public class ForecastHour {
     this.willItRain = willItRain;
   }
 
-  public ForecastHour chanceOfRain(BigDecimal chanceOfRain) {
+  public MarineHour chanceOfRain(BigDecimal chanceOfRain) {
     this.chanceOfRain = chanceOfRain;
     return this;
   }
@@ -598,7 +616,7 @@ public class ForecastHour {
     this.chanceOfRain = chanceOfRain;
   }
 
-  public ForecastHour willItSnow(Integer willItSnow) {
+  public MarineHour willItSnow(Integer willItSnow) {
     this.willItSnow = willItSnow;
     return this;
   }
@@ -616,7 +634,7 @@ public class ForecastHour {
     this.willItSnow = willItSnow;
   }
 
-  public ForecastHour chanceOfSnow(BigDecimal chanceOfSnow) {
+  public MarineHour chanceOfSnow(BigDecimal chanceOfSnow) {
     this.chanceOfSnow = chanceOfSnow;
     return this;
   }
@@ -634,7 +652,7 @@ public class ForecastHour {
     this.chanceOfSnow = chanceOfSnow;
   }
 
-  public ForecastHour visKm(BigDecimal visKm) {
+  public MarineHour visKm(BigDecimal visKm) {
     this.visKm = visKm;
     return this;
   }
@@ -652,7 +670,7 @@ public class ForecastHour {
     this.visKm = visKm;
   }
 
-  public ForecastHour visMiles(BigDecimal visMiles) {
+  public MarineHour visMiles(BigDecimal visMiles) {
     this.visMiles = visMiles;
     return this;
   }
@@ -670,7 +688,7 @@ public class ForecastHour {
     this.visMiles = visMiles;
   }
 
-  public ForecastHour gustMph(BigDecimal gustMph) {
+  public MarineHour gustMph(BigDecimal gustMph) {
     this.gustMph = gustMph;
     return this;
   }
@@ -688,7 +706,7 @@ public class ForecastHour {
     this.gustMph = gustMph;
   }
 
-  public ForecastHour gustKph(BigDecimal gustKph) {
+  public MarineHour gustKph(BigDecimal gustKph) {
     this.gustKph = gustKph;
     return this;
   }
@@ -706,7 +724,115 @@ public class ForecastHour {
     this.gustKph = gustKph;
   }
 
-  public ForecastHour uv(Integer uv) {
+  public MarineHour sigHtMt(BigDecimal sigHtMt) {
+    this.sigHtMt = sigHtMt;
+    return this;
+  }
+
+   /**
+   * Get sigHtMt
+   * @return sigHtMt
+  **/
+  @ApiModelProperty(example = "24.1", value = "")
+  public BigDecimal getSigHtMt() {
+    return sigHtMt;
+  }
+
+  public void setSigHtMt(BigDecimal sigHtMt) {
+    this.sigHtMt = sigHtMt;
+  }
+
+  public MarineHour swellHtMt(BigDecimal swellHtMt) {
+    this.swellHtMt = swellHtMt;
+    return this;
+  }
+
+   /**
+   * Get swellHtMt
+   * @return swellHtMt
+  **/
+  @ApiModelProperty(example = "24.1", value = "")
+  public BigDecimal getSwellHtMt() {
+    return swellHtMt;
+  }
+
+  public void setSwellHtMt(BigDecimal swellHtMt) {
+    this.swellHtMt = swellHtMt;
+  }
+
+  public MarineHour swellHtFt(BigDecimal swellHtFt) {
+    this.swellHtFt = swellHtFt;
+    return this;
+  }
+
+   /**
+   * Get swellHtFt
+   * @return swellHtFt
+  **/
+  @ApiModelProperty(example = "24.1", value = "")
+  public BigDecimal getSwellHtFt() {
+    return swellHtFt;
+  }
+
+  public void setSwellHtFt(BigDecimal swellHtFt) {
+    this.swellHtFt = swellHtFt;
+  }
+
+  public MarineHour swellDir(BigDecimal swellDir) {
+    this.swellDir = swellDir;
+    return this;
+  }
+
+   /**
+   * Get swellDir
+   * @return swellDir
+  **/
+  @ApiModelProperty(example = "24.1", value = "")
+  public BigDecimal getSwellDir() {
+    return swellDir;
+  }
+
+  public void setSwellDir(BigDecimal swellDir) {
+    this.swellDir = swellDir;
+  }
+
+  public MarineHour swellDir16Point(BigDecimal swellDir16Point) {
+    this.swellDir16Point = swellDir16Point;
+    return this;
+  }
+
+   /**
+   * Get swellDir16Point
+   * @return swellDir16Point
+  **/
+  @ApiModelProperty(example = "24.1", value = "")
+  public BigDecimal getSwellDir16Point() {
+    return swellDir16Point;
+  }
+
+  public void setSwellDir16Point(BigDecimal swellDir16Point) {
+    this.swellDir16Point = swellDir16Point;
+  }
+
+  public MarineHour swellPeriodSecs(BigDecimal swellPeriodSecs) {
+    this.swellPeriodSecs = swellPeriodSecs;
+    return this;
+  }
+
+   /**
+   * Get swellPeriodSecs
+   * @return swellPeriodSecs
+  **/
+  @ApiModelProperty(example = "24.1", value = "")
+  public BigDecimal getSwellPeriodSecs() {
+    return swellPeriodSecs;
+  }
+
+  public void setSwellPeriodSecs(BigDecimal swellPeriodSecs) {
+    this.swellPeriodSecs = swellPeriodSecs;
+  }
+
+  public MarineHour uv(Integer uv) {
     this.uv = uv;
     return this;
   }
@@ -733,52 +859,58 @@ public class ForecastHour {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    ForecastHour forecastHour = (ForecastHour) o;
-    return Objects.equals(this.timeEpoch, forecastHour.timeEpoch) &&
-        Objects.equals(this.time, forecastHour.time) &&
-        Objects.equals(this.tempC, forecastHour.tempC) &&
-        Objects.equals(this.tempF, forecastHour.tempF) &&
-        Objects.equals(this.isDay, forecastHour.isDay) &&
-        Objects.equals(this.condition, forecastHour.condition) &&
-        Objects.equals(this.windMph, forecastHour.windMph) &&
-        Objects.equals(this.windKph, forecastHour.windKph) &&
-        Objects.equals(this.windDegree, forecastHour.windDegree) &&
-        Objects.equals(this.windDir, forecastHour.windDir) &&
-        Objects.equals(this.pressureMb, forecastHour.pressureMb) &&
-        Objects.equals(this.pressureIn, forecastHour.pressureIn) &&
-        Objects.equals(this.precipMm, forecastHour.precipMm) &&
-        Objects.equals(this.precipIn, forecastHour.precipIn) &&
-        Objects.equals(this.humidity, forecastHour.humidity) &&
-        Objects.equals(this.cloud, forecastHour.cloud) &&
-        Objects.equals(this.feelslikeC, forecastHour.feelslikeC) &&
-        Objects.equals(this.feelslikeF, forecastHour.feelslikeF) &&
-        Objects.equals(this.windchillC, forecastHour.windchillC) &&
-        Objects.equals(this.windchillF, forecastHour.windchillF) &&
-        Objects.equals(this.heatindexC, forecastHour.heatindexC) &&
-        Objects.equals(this.heatindexF, forecastHour.heatindexF) &&
-        Objects.equals(this.dewpointC, forecastHour.dewpointC) &&
-        Objects.equals(this.dewpointF, forecastHour.dewpointF) &&
-        Objects.equals(this.willItRain, forecastHour.willItRain) &&
-        Objects.equals(this.chanceOfRain, forecastHour.chanceOfRain) &&
-        Objects.equals(this.willItSnow, forecastHour.willItSnow) &&
-        Objects.equals(this.chanceOfSnow, forecastHour.chanceOfSnow) &&
-        Objects.equals(this.visKm, forecastHour.visKm) &&
-        Objects.equals(this.visMiles, forecastHour.visMiles) &&
-        Objects.equals(this.gustMph, forecastHour.gustMph) &&
-        Objects.equals(this.gustKph, forecastHour.gustKph) &&
-        Objects.equals(this.uv, forecastHour.uv);
+    MarineHour marineHour = (MarineHour) o;
+    return Objects.equals(this.timeEpoch, marineHour.timeEpoch) &&
+        Objects.equals(this.time, marineHour.time) &&
+        Objects.equals(this.tempC, marineHour.tempC) &&
+        Objects.equals(this.tempF, marineHour.tempF) &&
+        Objects.equals(this.isDay, marineHour.isDay) &&
+        Objects.equals(this.condition, marineHour.condition) &&
+        Objects.equals(this.windMph, marineHour.windMph) &&
+        Objects.equals(this.windKph, marineHour.windKph) &&
+        Objects.equals(this.windDegree, marineHour.windDegree) &&
+        Objects.equals(this.windDir, marineHour.windDir) &&
+        Objects.equals(this.pressureMb, marineHour.pressureMb) &&
+        Objects.equals(this.pressureIn, marineHour.pressureIn) &&
+        Objects.equals(this.precipMm, marineHour.precipMm) &&
+        Objects.equals(this.precipIn, marineHour.precipIn) &&
+        Objects.equals(this.humidity, marineHour.humidity) &&
+        Objects.equals(this.cloud, marineHour.cloud) &&
+        Objects.equals(this.feelslikeC, marineHour.feelslikeC) &&
+        Objects.equals(this.feelslikeF, marineHour.feelslikeF) &&
+        Objects.equals(this.windchillC, marineHour.windchillC) &&
+        Objects.equals(this.windchillF, marineHour.windchillF) &&
+        Objects.equals(this.heatindexC, marineHour.heatindexC) &&
+        Objects.equals(this.heatindexF, marineHour.heatindexF) &&
+        Objects.equals(this.dewpointC, marineHour.dewpointC) &&
+        Objects.equals(this.dewpointF, marineHour.dewpointF) &&
+        Objects.equals(this.willItRain, marineHour.willItRain) &&
+        Objects.equals(this.chanceOfRain, marineHour.chanceOfRain) &&
+        Objects.equals(this.willItSnow, marineHour.willItSnow) &&
+        Objects.equals(this.chanceOfSnow, marineHour.chanceOfSnow) &&
+        Objects.equals(this.visKm, marineHour.visKm) &&
+        Objects.equals(this.visMiles, marineHour.visMiles) &&
+        Objects.equals(this.gustMph, marineHour.gustMph) &&
+        Objects.equals(this.gustKph, marineHour.gustKph) &&
+        Objects.equals(this.sigHtMt, marineHour.sigHtMt) &&
+        Objects.equals(this.swellHtMt, marineHour.swellHtMt) &&
+        Objects.equals(this.swellHtFt, marineHour.swellHtFt) &&
+        Objects.equals(this.swellDir, marineHour.swellDir) &&
+        Objects.equals(this.swellDir16Point, marineHour.swellDir16Point) &&
+        Objects.equals(this.swellPeriodSecs, marineHour.swellPeriodSecs) &&
+        Objects.equals(this.uv, marineHour.uv);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(timeEpoch, time, tempC, tempF, isDay, condition, windMph, windKph, windDegree, windDir, pressureMb, pressureIn, precipMm, precipIn, humidity, cloud, feelslikeC, feelslikeF, windchillC, windchillF, heatindexC, heatindexF, dewpointC, dewpointF, willItRain, chanceOfRain, willItSnow, chanceOfSnow, visKm, visMiles, gustMph, gustKph, uv);
+    return Objects.hash(timeEpoch, time, tempC, tempF, isDay, condition, windMph, windKph, windDegree, windDir, pressureMb, pressureIn, precipMm, precipIn, humidity, cloud, feelslikeC, feelslikeF, windchillC, windchillF, heatindexC, heatindexF, dewpointC, dewpointF, willItRain, chanceOfRain, willItSnow, chanceOfSnow, visKm, visMiles, gustMph, gustKph, sigHtMt, swellHtMt, swellHtFt, swellDir, swellDir16Point, swellPeriodSecs, uv);
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class ForecastHour {\n");
+    sb.append("class MarineHour {\n");
     
     sb.append("    timeEpoch: ").append(toIndentedString(timeEpoch)).append("\n");
     sb.append("    time: ").append(toIndentedString(time)).append("\n");
@@ -812,6 +944,12 @@ public class ForecastHour {
     sb.append("    visMiles: ").append(toIndentedString(visMiles)).append("\n");
     sb.append("    gustMph: ").append(toIndentedString(gustMph)).append("\n");
     sb.append("    gustKph: ").append(toIndentedString(gustKph)).append("\n");
+    sb.append("    sigHtMt: ").append(toIndentedString(sigHtMt)).append("\n");
+    sb.append("    swellHtMt: ").append(toIndentedString(swellHtMt)).append("\n");
+    sb.append("    swellHtFt: ").append(toIndentedString(swellHtFt)).append("\n");
+    sb.append("    swellDir: ").append(toIndentedString(swellDir)).append("\n");
+    sb.append("    swellDir16Point: ").append(toIndentedString(swellDir16Point)).append("\n");
+    sb.append("    swellPeriodSecs: ").append(toIndentedString(swellPeriodSecs)).append("\n");
     sb.append("    uv: ").append(toIndentedString(uv)).append("\n");
     sb.append("}");
     return sb.toString();

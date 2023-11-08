@@ -1,3 +1,4 @@
+
 # Ip
 
 ## Properties
@@ -18,3 +19,6 @@ Name | Type | Description | Notes
 **tzId** | **String** |  |  [optional]
 **localtimeEpoch** | **Integer** |  |  [optional]
 **localtime** | **String** |  |  [optional]
+
+
+

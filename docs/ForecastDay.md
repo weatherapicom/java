@@ -1,3 +1,4 @@
+
 # ForecastDay
 
 ## Properties
@@ -11,14 +12,17 @@ Name | Type | Description | Notes
 **avgtempF** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **maxwindMph** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **maxwindKph** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
-**totalprecipMm** | **Integer** |  |  [optional]
-**totalprecipIn** | **Integer** |  |  [optional]
-**avgvisKm** | **Integer** |  |  [optional]
-**avgvisMiles** | **Integer** |  |  [optional]
-**avghumidity** | **Integer** |  |  [optional]
+**totalprecipMm** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**totalprecipIn** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**avgvisKm** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**avgvisMiles** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**avghumidity** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **dailyWillItRain** | **Integer** |  |  [optional]
-**dailyChanceOfRain** | **Integer** |  |  [optional]
+**dailyChanceOfRain** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **dailyWillItSnow** | **Integer** |  |  [optional]
-**dailyChanceOfSnow** | **Integer** |  |  [optional]
+**dailyChanceOfSnow** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **condition** | [**ForecastDayCondition**](ForecastDayCondition.md) |  |  [optional]
 **uv** | **Integer** |  |  [optional]
+
+
+

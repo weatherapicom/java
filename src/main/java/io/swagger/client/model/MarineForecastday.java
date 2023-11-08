@@ -22,18 +22,89 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import io.swagger.client.model.AstronomyAstro;
+import io.swagger.client.model.ForecastAstro;
+import io.swagger.client.model.ForecastDay;
+import io.swagger.client.model.MarineHour;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import org.threeten.bp.LocalDate;
 
 /**
- * Astronomy
+ * MarineForecastday
  */
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2023-11-08T07:58:56.667Z")
-public class Astronomy {
-  @SerializedName("astro")
-  private AstronomyAstro astro = null;
+public class MarineForecastday {
+  @SerializedName("date")
+  private LocalDate date = null;
 
-  public Astronomy astro(AstronomyAstro astro) {
+  @SerializedName("date_epoch")
+  private Integer dateEpoch = null;
+
+  @SerializedName("day")
+  private ForecastDay day = null;
+
+  @SerializedName("astro")
+  private ForecastAstro astro = null;
+
+  @SerializedName("hour")
+  private List<MarineHour> hour = null;
+
+  public MarineForecastday date(LocalDate date) {
+    this.date = date;
+    return this;
+  }
+
+   /**
+   * Get date
+   * @return date
+  **/
+  @ApiModelProperty(example = "2022-07-22T00:00:00.000Z", value = "")
+  public LocalDate getDate() {
+    return date;
+  }
+
+  public void setDate(LocalDate date) {
+    this.date = date;
+  }
+
+  public MarineForecastday dateEpoch(Integer dateEpoch) {
+    this.dateEpoch = dateEpoch;
+    return this;
+  }
+
+   /**
+   * Get dateEpoch
+   * @return dateEpoch
+  **/
+  @ApiModelProperty(example = "1658448000", value = "")
+  public Integer getDateEpoch() {
+    return dateEpoch;
+  }
+
+  public void setDateEpoch(Integer dateEpoch) {
+    this.dateEpoch = dateEpoch;
+  }
+
+  public MarineForecastday day(ForecastDay day) {
+    this.day = day;
+    return this;
+  }
+
+   /**
+   * Get day
+   * @return day
+  **/
+  @ApiModelProperty(value = "")
+  public ForecastDay getDay() {
+    return day;
+  }
+
+  public void setDay(ForecastDay day) {
+    this.day = day;
+  }
+
+  public MarineForecastday astro(ForecastAstro astro) {
     this.astro = astro;
     return this;
   }
@@ -43,12 +114,38 @@ public class Astronomy {
    * @return astro
   **/
   @ApiModelProperty(value = "")
-  public AstronomyAstro getAstro() {
+  public ForecastAstro getAstro() {
     return astro;
   }
 
-  public void setAstro(AstronomyAstro astro) {
+  public void setAstro(ForecastAstro astro) {
     this.astro = astro;
+  }
+
+  public MarineForecastday hour(List<MarineHour> hour) {
+    this.hour = hour;
+    return this;
+  }
+
+  public MarineForecastday addHourItem(MarineHour hourItem) {
+    if (this.hour == null) {
+      this.hour = new ArrayList<MarineHour>();
+    }
+    this.hour.add(hourItem);
+    return this;
+  }
+
+   /**
+   * Get hour
+   * @return hour
+  **/
+  @ApiModelProperty(value = "")
+  public List<MarineHour> getHour() {
+    return hour;
+  }
+
+  public void setHour(List<MarineHour> hour) {
+    this.hour = hour;
   }
 
 
@@ -60,22 +157,30 @@ public class Astronomy {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    Astronomy astronomy = (Astronomy) o;
-    return Objects.equals(this.astro, astronomy.astro);
+    MarineForecastday marineForecastday = (MarineForecastday) o;
+    return Objects.equals(this.date, marineForecastday.date) &&
+        Objects.equals(this.dateEpoch, marineForecastday.dateEpoch) &&
+        Objects.equals(this.day, marineForecastday.day) &&
+        Objects.equals(this.astro, marineForecastday.astro) &&
+        Objects.equals(this.hour, marineForecastday.hour);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(astro);
+    return Objects.hash(date, dateEpoch, day, astro, hour);
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class Astronomy {\n");
+    sb.append("class MarineForecastday {\n");
     
+    sb.append("    date: ").append(toIndentedString(date)).append("\n");
+    sb.append("    dateEpoch: ").append(toIndentedString(dateEpoch)).append("\n");
+    sb.append("    day: ").append(toIndentedString(day)).append("\n");
     sb.append("    astro: ").append(toIndentedString(astro)).append("\n");
+    sb.append("    hour: ").append(toIndentedString(hour)).append("\n");
     sb.append("}");
     return sb.toString();
   }

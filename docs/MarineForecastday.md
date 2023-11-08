@@ -1,5 +1,5 @@
 
-# ForecastForecastday
+# MarineForecastday
 
 ## Properties
 Name | Type | Description | Notes
@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **dateEpoch** | **Integer** |  |  [optional]
 **day** | [**ForecastDay**](ForecastDay.md) |  |  [optional]
 **astro** | [**ForecastAstro**](ForecastAstro.md) |  |  [optional]
-**hour** | [**List&lt;ForecastHour&gt;**](ForecastHour.md) |  |  [optional]
+**hour** | [**List&lt;MarineHour&gt;**](MarineHour.md) |  |  [optional]
 
 
 

@@ -22,74 +22,43 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import io.swagger.client.model.MarineForecastday;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * CurrentCondition
+ * Marine
  */
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2023-11-08T07:58:56.667Z")
-public class CurrentCondition {
-  @SerializedName("text")
-  private String text = null;
+public class Marine {
+  @SerializedName("forecastday")
+  private List<MarineForecastday> forecastday = null;
 
-  @SerializedName("icon")
-  private String icon = null;
+  public Marine forecastday(List<MarineForecastday> forecastday) {
+    this.forecastday = forecastday;
+    return this;
+  }
 
-  @SerializedName("code")
-  private Integer code = null;
-
-  public CurrentCondition text(String text) {
-    this.text = text;
+  public Marine addForecastdayItem(MarineForecastday forecastdayItem) {
+    if (this.forecastday == null) {
+      this.forecastday = new ArrayList<MarineForecastday>();
+    }
+    this.forecastday.add(forecastdayItem);
     return this;
   }
 
    /**
-   * Get text
-   * @return text
+   * Get forecastday
+   * @return forecastday
   **/
-  @ApiModelProperty(example = "Partly cloudy", value = "")
-  public String getText() {
-    return text;
+  @ApiModelProperty(value = "")
+  public List<MarineForecastday> getForecastday() {
+    return forecastday;
   }
 
-  public void setText(String text) {
-    this.text = text;
-  }
-
-  public CurrentCondition icon(String icon) {
-    this.icon = icon;
-    return this;
-  }
-
-   /**
-   * Get icon
-   * @return icon
-  **/
-  @ApiModelProperty(example = "//cdn.weatherapi.com/weather/64x64/day/116.png", value = "")
-  public String getIcon() {
-    return icon;
-  }
-
-  public void setIcon(String icon) {
-    this.icon = icon;
-  }
-
-  public CurrentCondition code(Integer code) {
-    this.code = code;
-    return this;
-  }
-
-   /**
-   * Get code
-   * @return code
-  **/
-  @ApiModelProperty(example = "1003", value = "")
-  public Integer getCode() {
-    return code;
-  }
-
-  public void setCode(Integer code) {
-    this.code = code;
+  public void setForecastday(List<MarineForecastday> forecastday) {
+    this.forecastday = forecastday;
   }
 
 
@@ -101,26 +70,22 @@ public class CurrentCondition {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    CurrentCondition currentCondition = (CurrentCondition) o;
-    return Objects.equals(this.text, currentCondition.text) &&
-        Objects.equals(this.icon, currentCondition.icon) &&
-        Objects.equals(this.code, currentCondition.code);
+    Marine marine = (Marine) o;
+    return Objects.equals(this.forecastday, marine.forecastday);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(text, icon, code);
+    return Objects.hash(forecastday);
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class CurrentCondition {\n");
+    sb.append("class Marine {\n");
     
-    sb.append("    text: ").append(toIndentedString(text)).append("\n");
-    sb.append("    icon: ").append(toIndentedString(icon)).append("\n");
-    sb.append("    code: ").append(toIndentedString(code)).append("\n");
+    sb.append("    forecastday: ").append(toIndentedString(forecastday)).append("\n");
     sb.append("}");
     return sb.toString();
   }

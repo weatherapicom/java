@@ -1,3 +1,4 @@
+
 # ForecastHour
 
 ## Properties
@@ -11,14 +12,14 @@ Name | Type | Description | Notes
 **condition** | [**ForecastCondition**](ForecastCondition.md) |  |  [optional]
 **windMph** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **windKph** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
-**windDegree** | **Integer** |  |  [optional]
+**windDegree** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **windDir** | **String** |  |  [optional]
-**pressureMb** | **Integer** |  |  [optional]
+**pressureMb** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **pressureIn** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
-**precipMm** | **Integer** |  |  [optional]
-**precipIn** | **Integer** |  |  [optional]
-**humidity** | **Integer** |  |  [optional]
-**cloud** | **Integer** |  |  [optional]
+**precipMm** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**precipIn** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**humidity** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**cloud** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **feelslikeC** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **feelslikeF** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **windchillC** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
@@ -28,11 +29,14 @@ Name | Type | Description | Notes
 **dewpointC** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **dewpointF** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **willItRain** | **Integer** |  |  [optional]
-**chanceOfRain** | **Integer** |  |  [optional]
+**chanceOfRain** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **willItSnow** | **Integer** |  |  [optional]
-**chanceOfSnow** | **Integer** |  |  [optional]
-**visKm** | **Integer** |  |  [optional]
-**visMiles** | **Integer** |  |  [optional]
-**gustMph** | **Integer** |  |  [optional]
+**chanceOfSnow** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**visKm** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**visMiles** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**gustMph** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **gustKph** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **uv** | **Integer** |  |  [optional]
+
+
+

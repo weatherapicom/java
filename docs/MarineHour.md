@@ -1,15 +1,15 @@
 
-# Current
+# MarineHour
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**lastUpdatedEpoch** | **Integer** |  |  [optional]
-**lastUpdated** | **String** |  |  [optional]
+**timeEpoch** | **Integer** |  |  [optional]
+**time** | **String** |  |  [optional]
 **tempC** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **tempF** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **isDay** | **Integer** |  |  [optional]
-**condition** | [**CurrentCondition**](CurrentCondition.md) |  |  [optional]
+**condition** | [**ForecastCondition**](ForecastCondition.md) |  |  [optional]
 **windMph** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **windKph** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **windDegree** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
@@ -22,12 +22,27 @@ Name | Type | Description | Notes
 **cloud** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **feelslikeC** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **feelslikeF** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**windchillC** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**windchillF** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**heatindexC** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**heatindexF** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**dewpointC** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**dewpointF** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**willItRain** | **Integer** |  |  [optional]
+**chanceOfRain** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**willItSnow** | **Integer** |  |  [optional]
+**chanceOfSnow** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **visKm** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **visMiles** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
-**uv** | **Integer** |  |  [optional]
 **gustMph** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **gustKph** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
-**airQuality** | [**CurrentAirQuality**](CurrentAirQuality.md) |  |  [optional]
+**sigHtMt** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**swellHtMt** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**swellHtFt** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**swellDir** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**swellDir16Point** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**swellPeriodSecs** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
+**uv** | **Integer** |  |  [optional]
 
 
 

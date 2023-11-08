@@ -1,11 +1,10 @@
 
-# Error400
+# Marine
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **Integer** |  |  [optional]
-**message** | **String** |  |  [optional]
+**forecastday** | [**List&lt;MarineForecastday&gt;**](MarineForecastday.md) |  |  [optional]
 
 
 
